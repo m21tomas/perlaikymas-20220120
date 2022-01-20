@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.js": "/Tomasm21-war/static/js/main.0ac65931.chunk.js",
+    "main.js.map": "/Tomasm21-war/static/js/main.0ac65931.chunk.js.map",
+    "runtime-main.js": "/Tomasm21-war/static/js/runtime-main.dc12382e.js",
+    "runtime-main.js.map": "/Tomasm21-war/static/js/runtime-main.dc12382e.js.map",
+    "static/css/2.68a81a89.chunk.css": "/Tomasm21-war/static/css/2.68a81a89.chunk.css",
+    "static/js/2.bcb814dd.chunk.js": "/Tomasm21-war/static/js/2.bcb814dd.chunk.js",
+    "static/js/2.bcb814dd.chunk.js.map": "/Tomasm21-war/static/js/2.bcb814dd.chunk.js.map",
+    "static/js/3.77070209.chunk.js": "/Tomasm21-war/static/js/3.77070209.chunk.js",
+    "static/js/3.77070209.chunk.js.map": "/Tomasm21-war/static/js/3.77070209.chunk.js.map",
+    "index.html": "/Tomasm21-war/index.html",
+    "precache-manifest.2471fe6ffa2f69fe03292abbffa09c9e.js": "/Tomasm21-war/precache-manifest.2471fe6ffa2f69fe03292abbffa09c9e.js",
+    "service-worker.js": "/Tomasm21-war/service-worker.js",
+    "static/css/2.68a81a89.chunk.css.map": "/Tomasm21-war/static/css/2.68a81a89.chunk.css.map",
+    "static/js/2.bcb814dd.chunk.js.LICENSE.txt": "/Tomasm21-war/static/js/2.bcb814dd.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.dc12382e.js",
+    "static/css/2.68a81a89.chunk.css",
+    "static/js/2.bcb814dd.chunk.js",
+    "static/js/main.0ac65931.chunk.js"
+  ]
+}

@@ -9,27 +9,30 @@ class TableImage extends Component{
             <div className="row">
                 <div className="col-12">
                     <p  style={{"paddingTop": "20px", "textAlign": "left", "fontWeight": "bold", "fontSize": "20px"}}> 
-                    An image of overall products as table:</p>
+                    Traukiniu lentele:</p>
                 </div>
              </div>
             <div className="row">
                 <Table style={{"width": "auto"}} borderless>
-                    <thead>
-                        <tr>
+                    <tr>
                         <th>#</th>
-                        <th>Title</th>
-                        <th>Price</th>
-                        <th>Quantity</th>
-                        </tr>
-                    </thead>
+                        <th>Traukinio numeris</th>
+                        <th>Pagaminimo metai</th>
+                        <th>Gamintojas</th>
+                        <th>Vagonu skaicius</th>
+                        <th>Atvyksta is</th>
+                        <th>Vaziuoja i</th>
+                    </tr>
                     <tbody>
                     {
-                        this.props.dataList.map(item => (
-                            <tr key={item.id}>
-                                <th>{item.id}</th>
-                                <th>{item.title}</th>
-                                <th>{item.price}</th>
-                                <th style={{"textAlign": "center"}}>{item.quantity}</th>
+                        this.props.trainList.map(item => (
+                            <tr key={it.id}>
+                            <th>{it.trainNumber}</th>
+                            <th>{it.yearManufacture}</th>
+                            <th>{it.manufacturer}</th>
+                            <th>{it.wagons}</th>
+                            <th>{it.arrivalCity}</th>
+                            <th>{it.departureCity}</th>
                             </tr>
                             )
                         )
