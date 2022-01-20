@@ -3,13 +3,13 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 const AddNewItem = (props) => {
 
-    const [state, setState] = useState({ title: "", imageUrl: "", description: "", price: "", quantity: "" });
+    const [state, setState] = useState({ trainNumber: "", yearManufacture: "", manufacturer: "", wagons: "", departureCity: "", arrivalCity:"" });
     const [itemAdd, setItemAdded] = useState("");
     var intervalID = setInterval(unsetText, 3000);
 
     let item = {};
     const handleChange = (e) => {
-        let id_num = props.dataList.length + 1;
+        let id_num = props.trainList.length + 1;
         item["id"] = id_num;
         let name = e.target.name;
         let value = e.target.value;
@@ -22,7 +22,7 @@ const AddNewItem = (props) => {
         props.parentCallback(item);
         setItemAdded(item.title + " is added to the Shop products list");
         intervalID = setInterval(unsetText, 3000);
-        setState({ title: "", imageUrl: "", description: "", price: "", quantity: "" })
+        setState({ trainNumber: "", yearManufacture: "", manufacturer: "", wagons: "", departureCity: "", arrivalCity:""  })
         console.log("AddNewItem.js submit state: " + state);
         e.preventDefault();
     }
@@ -39,14 +39,14 @@ const AddNewItem = (props) => {
             <form onSubmit={submitHandle} >
 
                 <div className="row bg-dark col-5-lg" style={{ color: "white", "width": "400px" }}>
-                    <h4>Pridėti naują prekę</h4>
+                    <h4>Pridėti naują traukinį</h4>
                 </div>
                 <div className="row pt-2">
                     <div className="col-5-lg">
-                        <span className="m-2">Pavadinimas</span>
+                        <span className="m-2">Traukinio numeris:</span>
                         <input className="col-5-lg" type="text"
-                            maxLength={40}
-                            name="title"
+                            maxLength={10}
+                            name="trainNumber"
                             placeholder="Pavadinimas"
                             onChange={handleChange} />
 
@@ -54,19 +54,20 @@ const AddNewItem = (props) => {
                 </div>
                 <div className="row pt-2">
                     <div className="col-5-lg">
-                        <span className="m-2">Paveiksliukas</span>
+                        <span className="m-2">Pagaminimo metai:</span>
                         <input className="col-5-lg" type="text"
-                            name="imageUrl"
+                            maxLength={4}
+                            name="yearManufacture"
                             placeholder="Paveiksliukas"
                             onChange={handleChange} />
                     </div>
                 </div>
                 <div className="row pt-2">
                     <div className="col-5-lg">
-                        <span className="m-2">Aprašymas</span>
+                        <span className="m-2">Gamintojas</span>
                         <input className="col-5-lg" type="text"
-                            maxLength={120}
-                            name="description"
+                            maxLength={20}
+                            name="manufacturer"
                             placeholder="Aprašymas (URL / classpath)"
                             onChange={handleChange} />
 
@@ -74,10 +75,10 @@ const AddNewItem = (props) => {
                 </div>
                 <div className="row pt-2">
                     <div className="col">
-                        <span className="m-2">Kaina</span>
+                        <span className="m-2">Vagonu skaicius:</span>
                         <input className="col" type="text"
                             maxLength={7}
-                            name="price"
+                            name="wagons"
                             placeholder="Kaina"
                             onChange={handleChange} />
 
@@ -85,10 +86,20 @@ const AddNewItem = (props) => {
                 </div>
                 <div className="row pt-2">
                     <div className="col">
-                        <span className="m-2">Kiekis</span>
+                        <span className="m-2">Išvykimo miestas:</span>
                         <input className="col" type="text"
-                            maxLength={7}
-                            name="quantity"
+                            maxLength={30}
+                            name="departureCity"
+                            placeholder="Kiekis"
+                            onChange={handleChange} />
+                    </div>
+                </div>
+                <div className="row pt-2">
+                    <div className="col">
+                        <span className="m-2">Atvykimo miestas:</span>
+                        <input className="col" type="text"
+                            maxLength={30}
+                            name="arrivalCity"
                             placeholder="Kiekis"
                             onChange={handleChange} />
                     </div>

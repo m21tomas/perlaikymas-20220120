@@ -5,74 +5,42 @@ import {
   Route,
   Link
 } from "react-router-dom";
-import flash from './img/usb-flash.jpg';
-import office from './img/office_soft.jpg';
-import speakers from './img/speakers_lt.jpg';
-import cellphone from './img/redmi_note.jpg';
-import gadapter from './img/GTX-980-Ti.png';
-import comp from './img/acer_desktop.jpg';
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ActualItems from './Components/ActualItems';
 import AddNewItem from './Components/AddNewItem';
 
-const dataList = [
+const trainList = [
   {
-      id: 1,
-      title: "Atmintine",
-      imageUrl: flash,
-      description: "256 GB atmintine",
-      price: 50,
-      quantity: 10
+    id: 1,
+    trainNumber: 119587,
+    yearManufacture: 1997,
+    manufacturer: Berkshire,
+    wagons: 30,
+    departureCity: Kaunas,
+    arrivalCity: Vilnius,
+    imageUrl: "https://www.interrail.eu/content/dam/images/interrail/czech_train_72dpi_1280x853px_e_nr-1097.jpg"
   },
   {
-      id: 2,
-      title: "Office365 programine iranga",
-      imageUrl: office,
-      description: "MS-Office365 programine iranga",
-      price: 150,
-      quantity: 5
+    id: 2,
+    trainNumber: 120123,
+    yearManufacture: 2001,
+    manufacturer: UnionPacific,
+    wagons: 50,
+    departureCity: Klaipeda,
+    arrivalCity: Kaunas,
+    imageUrl: "https://wheelieaccessibleadventures.com/wp-content/uploads/2019/07/translink-access-.jpg"
   },
-  {
-      id: 3,
-      title: "Koloneles",
-      imageUrl: speakers,
-      description: "Garso koloneles 2.0",
-      price: 250,
-      quantity: 2
-  },
-  {
-      id: 4,
-      title: "Telefonas RedMi Note",
-      imageUrl: cellphone,
-      description: "Telefonas Redmi Note XG2201i",
-      price: 300,
-      quantity: 4
-  },
-  {
-      id: 5,
-      title: "Vaizdo plokste GTX-980-Ti",
-      imageUrl: gadapter,
-      description: "4GB Vaizdo plokste personaliniam kompiuteriui",
-      price: 500,
-      quantity: 2
-  },
-  {
-      id: 6,
-      title: "Stalo kompiuteris Acer",
-      imageUrl: comp,
-      description: "Personalinis kompiuteris Acer",
-      price: 1500,
-      quantity: 1
-  }
+
 ]
 
 function App() {
 
-  const [state, setState] = useState(dataList);
+  const [state, setState] = useState(trainList);
 
   const handleCallback = (childName) => {
-    setState(dataList.push(childName))
-    console.log("App.js New item add dataList state: " + state);
+    setState(trainList.push(childName))
+    console.log("App.js New item add trainList state: " + state);
   };
 
   return (
@@ -82,10 +50,10 @@ function App() {
           <div className="container-fluid">
             <ul className="navbar-nav">
               <li className="nav-item">
-                <Link className="nav-link py-2" to="/Shop">Shop</Link>
+                <Link className="nav-link py-2" to="/Shop">Traukiniai</Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link py-2 mx-3" to="/New-Product">New Product</Link>
+                <Link className="nav-link py-2 mx-3" to="/New-Product">Ideti naują traukini</Link>
               </li>
             </ul>
           </div>
@@ -93,10 +61,10 @@ function App() {
 
         <Switch>
           <Route path="/Shop">
-            <ActualItems dataList={dataList} />
+            <ActualItems trainList={trainList} />
           </Route>
           <Route path="/New-Product">
-            <AddNewItem dataList={dataList}
+            <AddNewItem trainList={trainList}
               parentCallback={handleCallback} />
           </Route>
         </Switch>

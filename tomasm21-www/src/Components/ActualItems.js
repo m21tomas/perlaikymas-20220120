@@ -16,10 +16,10 @@ const ActualItems = (props) => {
     return (
         <div>
             <UpperBar />
-            <ShowItems dataList={props.dataList} />
-            <TableImage dataList={props.dataList} />
-            <FilteredItems dataList={props.dataList} />
-            <SumOfAllPrices dataList={props.dataList} />
+            <ShowItems trainList={props.trainList} />
+            <TableImage trainList={props.trainList} />
+            <FilteredItems trainList={props.trainList} />
+            <SumOfAllPrices trainList={props.trainList} />
         </div>
     );
 }

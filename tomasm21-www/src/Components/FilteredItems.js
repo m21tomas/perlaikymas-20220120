@@ -2,32 +2,41 @@ import React from 'react';
 import { Table } from 'react-bootstrap';
 
 const getItems = (props) => {
-    return props.dataList.filter(it => it.price < 200).map(it => {
+    return props.trainList.filter(it => it.wagons < 50).map(it => {
         return (
             <tr key={it.id}>
-                <th>{it.title}</th>
-                <th>{it.price}</th>
+                <th>{it.trainNumber}</th>
+                <th>{it.yearManufacture}</th>
+                <th>{it.manufacturer}</th>
+                <th>{it.wagons}</th>
+                <th>{it.arrivalCity}</th>
+                <th>{it.departureCity}</th>
             </tr>
         )
     });
 }
 
 function FilteredItems(props) {
-    //  return props.dataList.filter(item => item.price < 200).map(item => {
+    //  return props.trainList.filter(item => item.price < 200).map(item => {
     return (
         <div className="container">
             <div className="row">
                 <div className="col-12">
                     <p style={{ "paddingTop": "20px", "textAlign": "left", "fontWeight": "bold", "fontSize": "20px" }}>
-                        Filtered products that price is less than 200:</p>
+                        Traukiniai kuriu vagonu skaicius maziau nei 50:</p>
                 </div>
             </div>
 
             <Table style={{ "width": "auto" }} className="table table-bordered">
                 <thead>
                     <tr>
-                        <th>Title</th>
-                        <th>Price</th>
+                        <th>#</th>
+                        <th>Traukinio numeris</th>
+                        <th>Pagaminimo metai</th>
+                        <th>Gamintojas</th>
+                        <th>Vagonu skaicius</th>
+                        <th>Atvyksta is</th>
+                        <th>Vaziuoja i</th>
                     </tr>
                 </thead>
                 <tbody>
