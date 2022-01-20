@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/home/tomas/Documents/My-mavens/hello-world-calc-2/static/css/main.c2eaaeb3.chunk.css",
+    "main.js": "/home/tomas/Documents/My-mavens/hello-world-calc-2/static/js/main.d50cc984.chunk.js",
+    "main.js.map": "/home/tomas/Documents/My-mavens/hello-world-calc-2/static/js/main.d50cc984.chunk.js.map",
+    "runtime-main.js": "/home/tomas/Documents/My-mavens/hello-world-calc-2/static/js/runtime-main.8896dfc1.js",
+    "runtime-main.js.map": "/home/tomas/Documents/My-mavens/hello-world-calc-2/static/js/runtime-main.8896dfc1.js.map",
+    "static/css/2.68a81a89.chunk.css": "/home/tomas/Documents/My-mavens/hello-world-calc-2/static/css/2.68a81a89.chunk.css",
+    "static/js/2.ff280ef3.chunk.js": "/home/tomas/Documents/My-mavens/hello-world-calc-2/static/js/2.ff280ef3.chunk.js",
+    "static/js/2.ff280ef3.chunk.js.map": "/home/tomas/Documents/My-mavens/hello-world-calc-2/static/js/2.ff280ef3.chunk.js.map",
+    "static/js/3.e1adc9fc.chunk.js": "/home/tomas/Documents/My-mavens/hello-world-calc-2/static/js/3.e1adc9fc.chunk.js",
+    "static/js/3.e1adc9fc.chunk.js.map": "/home/tomas/Documents/My-mavens/hello-world-calc-2/static/js/3.e1adc9fc.chunk.js.map",
+    "index.html": "/home/tomas/Documents/My-mavens/hello-world-calc-2/index.html",
+    "precache-manifest.1523cd8c95cb7e226efbce70404ab9ee.js": "/home/tomas/Documents/My-mavens/hello-world-calc-2/precache-manifest.1523cd8c95cb7e226efbce70404ab9ee.js",
+    "service-worker.js": "/home/tomas/Documents/My-mavens/hello-world-calc-2/service-worker.js",
+    "static/css/2.68a81a89.chunk.css.map": "/home/tomas/Documents/My-mavens/hello-world-calc-2/static/css/2.68a81a89.chunk.css.map",
+    "static/css/main.c2eaaeb3.chunk.css.map": "/home/tomas/Documents/My-mavens/hello-world-calc-2/static/css/main.c2eaaeb3.chunk.css.map",
+    "static/js/2.ff280ef3.chunk.js.LICENSE.txt": "/home/tomas/Documents/My-mavens/hello-world-calc-2/static/js/2.ff280ef3.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8896dfc1.js",
+    "static/css/2.68a81a89.chunk.css",
+    "static/js/2.ff280ef3.chunk.js",
+    "static/css/main.c2eaaeb3.chunk.css",
+    "static/js/main.d50cc984.chunk.js"
+  ]
+}

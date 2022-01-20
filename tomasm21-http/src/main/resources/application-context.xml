@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+                           http://www.springframework.org/schema/context
+                           http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+
+	<bean class="it.akademija.Products">
+        <property name="title" value="Bananas" />
+        <property name="imageUrl" value="https://paranormal.lt/_nw/35/07305355.jpg" />
+        <property name="description" value="A banana is an elongated, edible fruit – botanically a berry – produced by several kinds of large herbaceous flowering plants in the genus Musa." />
+        <property name="price" value="0.98/kg" />
+        <property name="quantity" value="100kg" />
+    </bean>
+    <bean class="it.akademija.Products">
+		<property name="title" value="Oranges" />
+		<property name="imageUrl" value="https://specialtyproduce.com/sppics/13305.png" />
+		<property name="description" value="The orange is a hybrid between pomelo (Citrus maxima) and mandarin (Citrus reticulata)." />
+		<property name="price" value="1.30/kg" />
+		<property name="quantity" value="200kg" />
+    </bean>
+
+</beans>

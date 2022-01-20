@@ -1,0 +1,12 @@
+it/akademija/HelloController.class
+it/akademija/HelloController$Result.class
+it/akademija/model/User.class
+it/akademija/ReactErrorController.class
+it/akademija/App.class
+it/akademija/model/CreateUserCommand.class
+it/akademija/dao/InMemoryUserDAO.class
+it/akademija/Products.class
+it/akademija/AppConfig.class
+it/akademija/dao/UserDAO.class
+it/akademija/controller/UserController.class
+it/akademija/RestServisas.class
