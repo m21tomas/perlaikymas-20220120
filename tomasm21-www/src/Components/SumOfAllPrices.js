@@ -1,7 +1,7 @@
 import React from 'react'
 
 function SumOfAll(props) {
-    return props.dataList.reduce((sum, item) => { return sum + item.quantity * item.price }, 0);
+    return props.trainList.reduce((sum, item) => { return sum + item.quantity * item.price }, 0);
 }
 
 function SumOfAllPrices(props) {
