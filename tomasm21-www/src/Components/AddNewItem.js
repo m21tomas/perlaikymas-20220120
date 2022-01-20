@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import axios from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const AddNewItem = (props) => {
@@ -30,6 +31,20 @@ const AddNewItem = (props) => {
     function unsetText() {
         setItemAdded("");
         clearInterval(intervalID);
+    }
+
+    const uploadCenter = async () => {
+
+        try {
+           const response = await axios.post(process.env.PUBLIC_URL + "/api/trains", state);
+            if (response.status < 400) {
+             console.log("data is sent to backend");
+            }
+
+        } catch (err) {
+            console.log(err);
+        }
+
     }
 
     return (

@@ -9,6 +9,7 @@ import {
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ActualItems from './Components/ActualItems';
 import AddNewItem from './Components/AddNewItem';
+import ShowItems from './Components/ShowItems';
 
 const trainList = [
   {
@@ -50,7 +51,7 @@ function App() {
           <div className="container-fluid">
             <ul className="navbar-nav">
               <li className="nav-item">
-                <Link className="nav-link py-2" to="/Trains">Traukiniai</Link>
+                <Link className="nav-link py-2" to="/Home">Traukiniai</Link>
               </li>
               <li className="nav-item">
                 <Link className="nav-link py-2 mx-3" to="/New-train">Ideti naują traukini</Link>
@@ -60,8 +61,9 @@ function App() {
         </nav>
 
         <Switch>
-          <Route path="/Trains">
-            <ActualItems trainList={trainList} />
+          <Route path="/Home">
+          <ShowItems trainList={trainList} />
+            {/* <ActualItems trainList={trainList} /> */}
           </Route>
           <Route path="/New-train">
             <AddNewItem trainList={trainList}
