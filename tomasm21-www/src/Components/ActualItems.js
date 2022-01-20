@@ -15,6 +15,7 @@ const ActualItems = (props) => {
 
     return (
         <div>
+            <h2> WTF</h2>
             <UpperBar />
             <ShowItems trainList={props.trainList} />
             <TableImage trainList={props.trainList} />

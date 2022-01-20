@@ -50,20 +50,20 @@ function App() {
           <div className="container-fluid">
             <ul className="navbar-nav">
               <li className="nav-item">
-                <Link className="nav-link py-2" to="/Shop">Traukiniai</Link>
+                <Link className="nav-link py-2" to="/Trains">Traukiniai</Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link py-2 mx-3" to="/New-Product">Ideti naują traukini</Link>
+                <Link className="nav-link py-2 mx-3" to="/New-train">Ideti naują traukini</Link>
               </li>
             </ul>
           </div>
         </nav>
 
         <Switch>
-          <Route path="/Shop">
+          <Route path="/Trains">
             <ActualItems trainList={trainList} />
           </Route>
-          <Route path="/New-Product">
+          <Route path="/New-train">
             <AddNewItem trainList={trainList}
               parentCallback={handleCallback} />
           </Route>
